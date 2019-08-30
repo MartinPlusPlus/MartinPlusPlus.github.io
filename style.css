@@ -47,6 +47,11 @@ li:hover {
   transition-duration: 0.25s;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav {
   display: flex;
   flex-direction: row;
