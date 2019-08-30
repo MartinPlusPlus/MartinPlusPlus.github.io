@@ -62,3 +62,14 @@ nav {
 
   background-color: #247ba0;
 }
+
+h3 {
+  font-weight: 600;
+  font-size: 40px;
+  margin: 3%;
+}
+
+p {
+  margin: 5%;
+  line-height: 175%;
+}
