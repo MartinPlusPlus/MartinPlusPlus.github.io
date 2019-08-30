@@ -1,3 +1,16 @@
-nav li {
-  display: inline;
+html {
+  font-size: 30px;
+}
+
+li {
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
