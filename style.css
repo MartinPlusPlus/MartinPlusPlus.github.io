@@ -1,3 +1,15 @@
+/*
+
+Color Scheme
+
+#011936 Dark Blue
+#3e2f5b Regular Blue
+#52796f Mint Green
+#84a98c Light Mint Green
+#247ba0 Lapis Blue
+
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
 * {
@@ -5,11 +17,34 @@
   font-size: 30px;
 }
 
-li {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+nav li {
   padding: 20px;
   font-size: 1rem;
   text-decoration: none;
   list-style: none;
+
+  color: white;
+
+  transition-duration: 0.5s;
+}
+
+li:hover {
+  font-size: 40px;
+  transition-duration: 0.25s;
 }
 
 nav {
@@ -17,4 +52,8 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-content: space-around;
+  margin: 0;
+
+  background-color: #247ba0;
 }
