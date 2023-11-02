@@ -2,15 +2,23 @@
 
 Color Scheme
 
-#011936 Dark Blue
-#3e2f5b Regular Blue
-#52796f Mint Green
-#84a98c Light Mint Green
-#247ba0 Lapis Blue
+#0D324D Primary Blue
+#9295C9 Secondary Blue 
+#315E52 Primary Green
+#13C4A3 Secondary Green
+#FFFFFF Background
 
 */
 
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+
+:root {
+    --primary-blue: #0D324D;
+    --secondary-blue: #9295C9; 
+    --primary-green: #315E52; 
+    --secondary-green: #13C4A3; 
+    --background-color: #FFFFFF; 
+}
 
 * {
   font-family: 'Be Vietnam', sans-serif;
@@ -60,7 +68,7 @@ nav {
   align-content: space-around;
   margin: 0;
 
-  background-color: #247ba0;
+  background-color: var(--secondary-blue);
 }
 
 h3 {
@@ -72,4 +80,12 @@ h3 {
 p {
   margin: 5%;
   line-height: 175%;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
