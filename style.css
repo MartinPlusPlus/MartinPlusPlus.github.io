@@ -1,28 +1,23 @@
-/*
-
-Color Scheme
-
-#0D324D Primary Blue
-#9295C9 Secondary Blue 
-#315E52 Primary Green
-#13C4A3 Secondary Green
-#FFFFFF Background
-
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto+Mono&display=swap');
 
 :root {
-    --primary-blue: #0D324D;
-    --secondary-blue: #9295C9; 
-    --primary-green: #315E52; 
-    --secondary-green: #13C4A3; 
-    --background-color: #FFFFFF; 
+    --background: #004C58; 
+    --secondary: #FAF3DD;
+    --primary1: #2DC7FF;
+    --primary2: #3fba4c;
+    --primary3: #DE175D;
+
+    --title-font: 'Be Vietname', sans-serif;
+    --text-font: 'Noto Sans Mono', monospace;
+
+    background-color: var(--background);
+    color: var(--primary2);
 }
 
 * {
-  font-family: 'Be Vietnam', sans-serif;
   font-size: 30px;
+  font-family: var(--text-font);
 }
 
 body {
@@ -37,6 +32,7 @@ header {
 
 header h1 {
   font-size: 50px;
+  font-family: var(--title-font);
 }
 
 nav li {
@@ -44,8 +40,6 @@ nav li {
   font-size: 1rem;
   text-decoration: none;
   list-style: none;
-
-  color: white;
 
   transition-duration: 0.5s;
 }
@@ -67,8 +61,6 @@ nav {
   justify-content: space-evenly;
   align-content: space-around;
   margin: 0;
-
-  background-color: var(--secondary-blue);
 }
 
 h3 {
