@@ -1,14 +1,5 @@
-const createNavbar = () => {
-    let items = ["about", "contact", "projects", "resume"];
-    let bar = document.getElementsByTagName("nav").item(0);
+import { createNavbar } from "./js/createNavbar.js";
 
-    // Preemptively add index.htmls
-    bar.innerHTML += `<li><a href="index.html">About</a></li>`;
+let items = ["about", "contact", "projects", "resume"];
 
-    for (let i = 1; i < items.length; i++) {
-        let item = items[i];
-        let itemUpper = item.charAt(0).toUpperCase() + item.slice(1);
-
-        bar.innerHTML += `<li><a href="${item}.html">${itemUpper}</a></li>`;
-    }
-};
+createNavbar(items);
