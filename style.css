@@ -25,6 +25,12 @@ body {
   padding: 0;
 }
 
+button#darkmodeclicker {
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--background), white);
+    border-radius: 20px;
+}
+
 header {
   display: flex;
   justify-content: center;
