@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto+Mono&display=swap');
 
 :root {
-    --background: #004C58; 
+    --background: #0B192E; 
     --secondary: #FAF3DD;
     --primary1: #2DC7FF;
     --primary2: #3fba4c;
@@ -15,7 +15,7 @@
     color: var(--primary2);
 }
 
-* {
+:root {
   font-size: 30px;
   font-family: var(--text-font);
 }
@@ -25,34 +25,25 @@ body {
   padding: 0;
 }
 
-button#darkmodeclicker {
-    padding: 20px;
-    background-image: linear-gradient(to right, var(--background), white);
-    border-radius: 20px;
-}
-
 header {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
 }
 
-header h1 {
-  font-size: 50px;
+h1 {
+  font-size: 60px;
   font-family: var(--title-font);
 }
 
 nav li {
   padding: 20px;
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-decoration: none;
   list-style: none;
 
   transition-duration: 0.5s;
-}
-
-li:hover {
-  font-size: 40px;
-  transition-duration: 0.25s;
 }
 
 a {
@@ -63,10 +54,7 @@ a {
 nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-around;
-  margin: 0;
+  justify-content: flex-end;
 }
 
 h3 {
@@ -80,10 +68,39 @@ p {
   line-height: 175%;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .italics {
     font-style: italic;
 }
 
-.bold {
-    font-weight: bold;
+.name {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.header-icon {
+  padding: 15px;
+}
+
+@keyframes fade {
+  0% {opacity: 100%}
+  100% {opacity: 0%}
+}
+
+#cursor {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+#little-intro {
+  font-size: 13px;
+  position: absolute;
+  top: 20%; 
+  left: 10%;
 }
